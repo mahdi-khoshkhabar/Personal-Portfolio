@@ -112,3 +112,15 @@ nav>ul a:hover {
   padding: 20px;
   margin: 10px;
 }
+
+.home-body {
+  display: flex;
+}
+
+#experience {
+  flex: 1;
+}
+
+#education {
+  flex: 3;
+}
