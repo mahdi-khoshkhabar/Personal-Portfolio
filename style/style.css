@@ -115,6 +115,7 @@ nav>ul a:hover {
 
 .home-body {
   display: flex;
+  color: #DDE6ED;
 }
 
 #experience {
@@ -125,6 +126,22 @@ nav>ul a:hover {
   flex: 3;
 }
 
+#education, #experience {
+  background-color:#526D82;
+}
+
 .underline {
   text-decoration: underline;
 }
+
+#experience h3, #education h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  margin-bottom: 15px;
+}
+
+#experience p, #education div {
+  margin: 20px;
+}
+
