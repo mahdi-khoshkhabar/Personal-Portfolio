@@ -124,3 +124,7 @@ nav>ul a:hover {
 #education {
   flex: 3;
 }
+
+.underline {
+  text-decoration: underline;
+}
