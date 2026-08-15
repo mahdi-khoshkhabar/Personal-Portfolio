@@ -1,0 +1,89 @@
+/* CSS Reset */
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+header>img {
+  min-width: 70px;
+  min-height: 70px;
+}
+
+#header-name {
+  margin-right: auto;
+  margin-left: 10px;
+
+  font-size: 1.5rem;
+  color: #27374D;
+}
+
+html {
+  background-color: #DDE6ED;
+}
+
+header {
+  position: sticky;
+  top: 0;
+
+  width: 100%;
+  height: 70px;
+
+  background-color: #9DB2BF;
+
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  width: 60%;
+}
+
+nav>ul {
+  height: inherit;
+
+  min-width: 220px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+
+  font-size: 1.2rem;
+}
+
+#hero {
+  margin: 50px auto;
+}
+
+nav>ul a:link,
+nav>ul a:visited,
+nav>ul a:active {
+  text-decoration: none;
+  color: #27374D;
+}
+
+nav>ul a:hover {
+  color: #DDE6ED;
+}
