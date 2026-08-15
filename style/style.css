@@ -103,3 +103,12 @@ nav>ul a:hover {
 #hero>h1 {
   font-size: 3rem;
 }
+
+.border {
+  border: 2px solid #27374D
+}
+
+#education, #experience {
+  padding: 20px;
+  margin: 10px;
+}
