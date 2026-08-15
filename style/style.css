@@ -156,7 +156,8 @@ nav>ul a:hover {
 }
 
 #education li {
-  margin-bottom: 10px;
+  margin: 10px 0px 0px 20px;
+  ;
 }
 
 #education a {
@@ -175,7 +176,8 @@ table {
   background-color: #526D82;
 }
 
-td, th {
+td,
+th {
   border: 1px solid #27374D;
   text-align: left;
   padding: 8px;
@@ -195,4 +197,13 @@ tr:nth-child(even) {
 
 #experience table a:hover {
   text-decoration: underline;
+}
+
+#experience table a:hover:nth-child(even) {
+  text-decoration: underline;
+  color: #DDE6ED;
+}
+
+#experience table tr:nth-child(odd) a {
+  color: #DDE6ED;
 }
