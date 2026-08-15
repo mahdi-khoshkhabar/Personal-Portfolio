@@ -87,3 +87,19 @@ nav>ul a:active {
 nav>ul a:hover {
   color: #DDE6ED;
 }
+
+/* Hero Section */
+
+#hero {
+  height: 250px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#hero>h1 {
+  font-size: 3rem;
+}
