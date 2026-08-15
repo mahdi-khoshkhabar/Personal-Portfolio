@@ -105,10 +105,11 @@ nav>ul a:hover {
 }
 
 .border {
-  border: 2px solid #27374D
+  border: 5px solid #9DB2BF
 }
 
-#education, #experience {
+#education,
+#experience {
   padding: 20px;
   margin: 10px;
 }
@@ -126,22 +127,48 @@ nav>ul a:hover {
   flex: 3;
 }
 
-#education, #experience {
-  background-color:#526D82;
+#education,
+#experience {
+  background-color: #27374D;
 }
 
 .underline {
   text-decoration: underline;
 }
 
-#experience h3, #education h3 {
+#experience h3,
+#education h3 {
   font-size: 1.5rem;
   font-weight: 500;
 
   margin-bottom: 15px;
 }
 
-#experience p, #education div {
+#experience p,
+#education div {
   margin: 20px;
 }
 
+#education h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  margin-bottom: 15px;
+}
+
+#education li {
+  margin-bottom: 10px;
+}
+
+#education a:link,
+#education a:visited,
+#education a:active {
+  text-decoration: none;
+  color: #9DB2BF;
+}
+
+#education a:hover {
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000000;
+  text-decoration: underline;
+}
