@@ -73,10 +73,6 @@ nav>ul {
   font-size: 1.2rem;
 }
 
-#hero {
-  margin: 50px auto;
-}
-
 nav>ul a {
   text-decoration: none;
   color: #27374D;
@@ -91,6 +87,8 @@ nav>ul a:hover {
 #hero {
   height: 250px;
 
+  margin: 50px auto;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,41 +97,35 @@ nav>ul a:hover {
 }
 
 #hero>h1 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
-.border {
-  border: 5px solid #9DB2BF
-}
-
+#project,
 #education,
 #experience {
   padding: 20px;
   margin: 10px;
 }
 
-.home-body {
-  display: flex;
-  color: #DDE6ED;
+#project {
+  flex: 2;
 }
 
 #experience {
-  flex: 1;
+  flex: 3;
 }
 
 #education {
-  flex: 1;
+  flex: 3;
 }
 
+#project,
 #education,
 #experience {
   background-color: #27374D;
 }
 
-.underline {
-  text-decoration: underline;
-}
-
+#project h3,
 #experience h3,
 #education h3 {
   font-size: 1.5rem;
@@ -142,7 +134,6 @@ nav>ul a:hover {
   margin-bottom: 30px;
 }
 
-#experience p,
 #education div {
   margin: 20px;
 }
@@ -188,22 +179,35 @@ tr:nth-child(even) {
   color: #27374D;
 }
 
-#experience table a {
+table a {
   text-decoration: none;
   color: #27374D;
 
   /* font-weight: bold; */
 }
 
-#experience table a:hover {
+table a:hover {
   text-decoration: underline;
 }
 
-#experience table a:hover:nth-child(even) {
+table a:hover:nth-child(even) {
   text-decoration: underline;
   color: #DDE6ED;
 }
 
-#experience table tr:nth-child(odd) a {
+table tr:nth-child(odd) a {
   color: #DDE6ED;
+}
+
+.border {
+  border: 5px solid #9DB2BF
+}
+
+.home-body {
+  display: flex;
+  color: #DDE6ED;
+}
+
+.underline {
+  text-decoration: underline;
 }
