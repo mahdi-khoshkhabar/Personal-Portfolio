@@ -204,8 +204,11 @@ table tr:nth-child(odd) a {
 }
 
 .home-body {
-  display: flex;
   color: #DDE6ED;
+
+  display: grid;
+
+  grid-template-columns: 30% 35% 35%;
 }
 
 .underline {
