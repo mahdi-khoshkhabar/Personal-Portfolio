@@ -3,6 +3,8 @@
 html {
   box-sizing: border-box;
   font-family: sans-serif;
+
+  background-color: #DDE6ED;
 }
 
 body,
@@ -34,12 +36,8 @@ header>img {
   margin-right: auto;
   margin-left: 10px;
 
-  font-size: 1.5rem;
+  font-size: clamp(0.7rem, 2.5vw, 5rem);
   color: #27374D;
-}
-
-html {
-  background-color: #DDE6ED;
 }
 
 header {
@@ -69,13 +67,15 @@ nav>ul {
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
-
-  font-size: 1.2rem;
 }
 
 nav>ul a {
   text-decoration: none;
   color: #27374D;
+
+    text-size-adjust: none;
+
+  font-size: clamp(0.7rem, 2vw, 3rem);
 }
 
 nav>ul a:hover {
@@ -97,8 +97,8 @@ nav>ul a:hover {
 }
 
 #title {
-  font-size: 4rem;
-  text-size-adjust: auto;
+  font-size: clamp(1.4rem, 5vw + 1rem, 5rem);
+  text-size-adjust: none;
 
   text-align: center;
 }
