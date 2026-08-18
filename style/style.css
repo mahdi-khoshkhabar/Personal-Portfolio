@@ -96,8 +96,9 @@ nav>ul a:hover {
   gap: 10px;
 }
 
-#hero>h1 {
+#title {
   font-size: 4rem;
+  text-size-adjust: auto;
 }
 
 #project,
