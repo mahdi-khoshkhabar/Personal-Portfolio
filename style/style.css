@@ -99,6 +99,8 @@ nav>ul a:hover {
 #title {
   font-size: 4rem;
   text-size-adjust: auto;
+
+  text-align: center;
 }
 
 #project,
@@ -225,5 +227,4 @@ table tr:nth-child(odd) a {
   .home-body {
     grid-template-columns: 1fr;
   }
-
 }
