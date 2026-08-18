@@ -208,9 +208,20 @@ table tr:nth-child(odd) a {
 
   display: grid;
 
-  grid-template-columns: 30% 35% 35%;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+#education {
+  grid-column: 1 / -1;
 }
 
 .underline {
   text-decoration: underline;
+}
+
+@media (max-width: 850px) {
+  .home-body {
+    grid-template-columns: 1fr;
+  }
 }
