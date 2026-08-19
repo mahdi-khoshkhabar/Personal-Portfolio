@@ -75,7 +75,7 @@ nav>ul a {
 
     text-size-adjust: none;
 
-  font-size: clamp(0.7rem, 2vw, 3rem);
+  font-size: clamp(0.7rem, 1.5vw, 3rem);
 }
 
 nav>ul a:hover {
