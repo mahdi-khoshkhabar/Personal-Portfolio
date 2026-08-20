@@ -1,17 +1,21 @@
-/* CSS Reset */
+/* ==========================================================================
+   Global Reset & Base
+   ========================================================================== */
 
 html {
   box-sizing: border-box;
   font-family: sans-serif;
+  background-color: #DDE6ED;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:is(h1, h2, h3, h4, h5, h6),
 body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p,
 ol,
 ul {
@@ -25,26 +29,14 @@ ul {
   list-style: none;
 }
 
-header>img {
-  min-width: 70px;
-  min-height: 70px;
-}
-
-#header-name {
-  margin-right: auto;
-  margin-left: 10px;
-
-  font-size: 1.5rem;
-  color: #27374D;
-}
-
-html {
-  background-color: #DDE6ED;
-}
+/* ==========================================================================
+   Header & Navigation
+   ========================================================================== */
 
 header {
   position: sticky;
   top: 0;
+  z-index: 100;
 
   width: 100%;
   height: 70px;
@@ -55,13 +47,25 @@ header {
   align-items: center;
 }
 
+header > img {
+  min-width: 70px;
+  min-height: 70px;
+}
+
+#header-name {
+  margin-right: auto;
+  margin-left: 10px;
+
+  font-size: clamp(0.7rem, 2vw, 3rem);
+  color: #27374D;
+}
+
 nav {
   width: 60%;
 }
 
-nav>ul {
+nav > ul {
   height: inherit;
-
   min-width: 220px;
 
   display: flex;
@@ -69,24 +73,26 @@ nav>ul {
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
-
-  font-size: 1.2rem;
 }
 
-nav>ul a {
+nav > ul a {
   text-decoration: none;
   color: #27374D;
+  text-size-adjust: none;
+  font-size: clamp(0.7rem, 1.5vw, 3rem);
 }
 
-nav>ul a:hover {
+nav > ul a:hover {
   color: #DDE6ED;
 }
 
-/* Hero Section */
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
 
 #hero {
+  min-height: 250px;
   height: 30vh;
-
   margin: 50px auto;
 
   display: flex;
@@ -96,15 +102,27 @@ nav>ul a:hover {
   gap: 10px;
 }
 
-#hero>h1 {
-  font-size: 4rem;
+:is(#title, #hero > h1) {
+  font-size: clamp(1.4rem, 5vw + 1rem, 5rem);
+  text-size-adjust: none;
+  text-align: center;
 }
 
-#project,
-#education,
-#experience {
+/* ==========================================================================
+   Main Content Layout
+   ========================================================================== */
+
+.home-body {
+  color: #DDE6ED;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+:is(#project, #experience, #education) {
   padding: 20px;
   margin: 10px;
+  background-color: #27374D;
 }
 
 #project {
@@ -117,20 +135,12 @@ nav>ul a:hover {
 
 #education {
   flex: 3;
+  grid-column: 1 / -1;
 }
 
-#project,
-#education,
-#experience {
-  background-color: #27374D;
-}
-
-#project h3,
-#experience h3,
-#education h3 {
+:is(#project, #experience, #education) h3 {
   font-size: 1.5rem;
   font-weight: 500;
-
   margin-bottom: 30px;
 }
 
@@ -141,14 +151,12 @@ nav>ul a:hover {
 #education h5 {
   font-size: 1.2rem;
   font-weight: 500;
-
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
 #education li {
-  margin: 10px 0px 0px 20px;
-  ;
+  margin: 10px 0 0 20px;
 }
 
 #education a {
@@ -159,6 +167,10 @@ nav>ul a:hover {
 #education a:hover {
   text-decoration: underline;
 }
+
+/* ==========================================================================
+   Table Styles
+   ========================================================================== */
 
 table {
   font-family: arial, sans-serif;
@@ -182,32 +194,30 @@ tr:nth-child(even) {
 table a {
   text-decoration: none;
   color: #27374D;
-
-  /* font-weight: bold; */
 }
 
 table a:hover {
   text-decoration: underline;
 }
 
-table a:hover:nth-child(even) {
-  text-decoration: underline;
-  color: #DDE6ED;
-}
-
 table tr:nth-child(odd) a {
   color: #DDE6ED;
 }
 
-.border {
-  border: 5px solid #9DB2BF
-}
+/* ==========================================================================
+   Utility Classes & Responsive Breakpoints
+   ========================================================================== */
 
-.home-body {
-  display: flex;
-  color: #DDE6ED;
+.border {
+  border: 5px solid #9DB2BF;
 }
 
 .underline {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 850px) {
+  .home-body {
+    grid-template-columns: 1fr;
+  }
 }
