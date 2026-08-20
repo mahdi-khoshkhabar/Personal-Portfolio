@@ -45,11 +45,14 @@ header {
 
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 
 header>img {
   min-width: 70px;
   min-height: 70px;
+
+  z-index: 2;
 }
 
 #header-name {
@@ -58,10 +61,13 @@ header>img {
 
   font-size: clamp(0.7rem, 2vw, 3rem);
   color: #27374D;
+
+  z-index: 2;
 }
 
 nav {
   width: 60%;
+  z-index: 2;
 }
 
 nav>ul {
