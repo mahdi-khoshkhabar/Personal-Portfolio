@@ -1,0 +1,52 @@
+.title {
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   Table Styles
+   ========================================================================== */
+
+.table-box {
+    padding: clamp(10px, 5vh, 100px) clamp(10px, 5vw, 100px);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(10px, 5vh, 100px);
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: var(--alt-light);
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+td, th {
+    border: 1px solid var(--alt-dark);
+    text-align: left;
+    padding: 0.5rem;
+}
+
+th {
+    color: var(--main-light);
+    background-color: var(--main-dark);
+}
+
+td {
+    color: var(--main-dark);
+}
+
+tr:nth-child(even) td {
+    background-color: var(--main-light);
+    color: #27374D;
+}
+
+table a {
+    text-decoration: none;
+    color: #27374D;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
