@@ -37,12 +37,12 @@ td {
 
 tr:nth-child(even) td {
     background-color: var(--main-light);
-    color: #27374D;
+    color: var(--main-dark);
 }
 
 table a {
     text-decoration: none;
-    color: #27374D;
+    color: var(--main-dark);
 }
 
 table a:hover {
@@ -50,5 +50,5 @@ table a:hover {
 }
 
 table tr:nth-child(odd) a {
-    color: #DDE6ED;
+    color: var(--main-light);
 }

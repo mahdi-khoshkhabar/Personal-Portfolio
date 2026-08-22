@@ -25,7 +25,7 @@
    ========================================================================== */
 
 .home-body {
-  color: #DDE6ED;
+  color: var(--main-light);
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
@@ -34,7 +34,7 @@
 :is(#project, #experience, #education) {
   padding: 20px;
   margin: 10px;
-  background-color: #27374D;
+  background-color: var(--main-dark);
 }
 
 
@@ -65,7 +65,7 @@
 
 #education a {
   text-decoration: none;
-  color: #9DB2BF;
+  color: var(--alt-light);
 }
 
 #education a:hover {
@@ -80,24 +80,24 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
-  background-color: #526D82;
+  background-color: var(--alt-dark);
 }
 
 td,
 th {
-  border: 1px solid #27374D;
+  border: 1px solid var(--main-dark);
   text-align: left;
   padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #9DB2BF;
-  color: #27374D;
+  background-color: var(--alt-light);
+  color: var(--main-dark);
 }
 
 table a {
   text-decoration: none;
-  color: #27374D;
+  color: var(--main-dark);
 }
 
 table a:hover {
@@ -105,7 +105,7 @@ table a:hover {
 }
 
 table tr:nth-child(odd) a {
-  color: #DDE6ED;
+  color: var(--main-light);
 }
 
 /* ==========================================================================
@@ -113,7 +113,7 @@ table tr:nth-child(odd) a {
    ========================================================================== */
 
 .border {
-  border: 5px solid #9DB2BF;
+  border: 5px solid var(--alt-light);
 }
 
 @media screen and (max-width: 640px) {

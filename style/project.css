@@ -17,19 +17,26 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    background-color: #526D82;
+    background-color: var(--alt-light);
 }
 
-td,
-th {
-    border: 1px solid #27374D;
+td, th {
+    border: 1px solid var(--alt-dark);
     text-align: left;
     padding: 0.5rem;
+}
+
+th {
     color: var(--main-light);
+    background-color: var(--main-dark);
+}
+
+td {
+    color: var(--main-dark);
 }
 
 tr:nth-child(even) td {
-    background-color: #9DB2BF;
+    background-color: var(--main-light);
     color: #27374D;
 }
 
@@ -40,8 +47,4 @@ table a {
 
 table a:hover {
     text-decoration: underline;
-}
-
-table tr:nth-child(odd) a {
-    color: #DDE6ED;
 }

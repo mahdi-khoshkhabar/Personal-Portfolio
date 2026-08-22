@@ -5,8 +5,8 @@
 html {
   box-sizing: border-box;
   font-family: sans-serif;
-  background-color: #DDE6ED;
-  color: #27374D;
+  background-color: var(--main-light);
+  color: var(--main-dark);
 }
 
 *,
