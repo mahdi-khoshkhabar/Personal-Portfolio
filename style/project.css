@@ -17,10 +17,11 @@ td,
 th {
     border: 1px solid #27374D;
     text-align: left;
-    padding: 8px;
+    padding: 0.5rem;
+    color: var(--main-light);
 }
 
-tr:nth-child(even) {
+tr:nth-child(even) td {
     background-color: #9DB2BF;
     color: #27374D;
 }
