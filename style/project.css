@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Table Styles
+   ========================================================================== */
+
+.table_box {
+    padding: clamp(10px, 5vh, 100px) clamp(10px, 5vw, 100px);
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #526D82;
+}
+
+td,
+th {
+    border: 1px solid #27374D;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #9DB2BF;
+    color: #27374D;
+}
+
+table a {
+    text-decoration: none;
+    color: #27374D;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+table tr:nth-child(odd) a {
+    color: #DDE6ED;
+}

@@ -116,7 +116,7 @@ table tr:nth-child(odd) a {
   border: 5px solid #9DB2BF;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 640px) {
   .home-body {
     grid-template-columns: 1fr;
   }
