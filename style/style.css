@@ -6,6 +6,7 @@ html {
   box-sizing: border-box;
   font-family: sans-serif;
   background-color: #DDE6ED;
+  color: #27374D;
 }
 
 *,
@@ -106,8 +107,6 @@ nav>ul a:hover {
   justify-content: center;
   align-items: center;
   gap: 10px;
-
-  color: #27374D;
 }
 
 #title {
@@ -220,4 +219,15 @@ table tr:nth-child(odd) a {
   .home-body {
     grid-template-columns: 1fr;
   }
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+  padding: clamp(10px, 5vh, 200px) clamp(10px, 5%, 200px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
